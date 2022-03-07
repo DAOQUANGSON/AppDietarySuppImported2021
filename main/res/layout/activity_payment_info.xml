@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PaymentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarPayment"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FA1BDC"
+        app:title="THÔNG TIN ĐƠN HÀNG"
+        app:titleTextColor="@color/white" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:background="#FA1BDC"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_edittext_border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user_name" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#D3D1D1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/editTextName"
+                android:hint="Họ tên"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#FAF8F8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_edittext_border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_mail" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#D3D1D1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/editTextEmail"
+                android:hint="Email"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#FAF8F8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_edittext_border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_phone" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#D3D1D1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/editTextPhone"
+                android:hint="Số điện thoại"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#FAF8F8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_edittext_border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_home" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#D3D1D1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/editTextAddress"
+                android:hint="Địa chỉ giao hàng"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#FAF8F8" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_edittext_border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_payment" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="#D3D1D1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/editTextTransfer"
+                android:hint="Phương thức thanh toán"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#FAF8F8" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_marginRight="100dp"
+                android:text="  HỦY ĐƠN HÀNG  "
+                android:background="#6DB9F4"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/buttonPayment"
+                android:text="  THANH TOÁN  "
+                android:background="#6DB9F4"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="272dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_wave_bottom" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
